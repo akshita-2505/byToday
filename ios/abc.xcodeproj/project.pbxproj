@@ -21,6 +21,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		4C2B72A016C694D438CE92EF /* libPods-abc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B78930E32559BCFD12134DFB /* libPods-abc.a */; };
+		7A246E36226D930F002BB523 /* libRNCWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A246E35226D9306002BB523 /* libRNCWebView.a */; };
+		7A246E83226D9C9D002BB523 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A246E82226D9C9C002BB523 /* Accounts.framework */; };
+		7A246F0C226DA597002BB523 /* AccountKitStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A246F0A226DA597002BB523 /* AccountKitStrings.bundle */; };
+		7A246F0D226DA597002BB523 /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A246F0B226DA597002BB523 /* AccountKit.framework */; };
+		7A246F0E226DAF7F002BB523 /* libRNAccountKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A246F07226DA585002BB523 /* libRNAccountKit.a */; };
 		7A93C5012269DFB4007CFBE3 /* libRCTFBLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A93C4DF2269DF9B007CFBE3 /* libRCTFBLogin.a */; };
 		7AE011A22269CA0600826FC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AE011742269CA0600826FC7 /* GoogleService-Info.plist */; };
 		7AE011E12269CC6600826FC7 /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE011E02269CC5A00826FC7 /* libRNGoogleSignin.a */; };
@@ -247,6 +252,20 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RCTLinking;
 		};
+		7A246E34226D9306002BB523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A246E30226D9306002BB523 /* RNCWebView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNCWebView;
+		};
+		7A246F06226DA585002BB523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14C8F564D96C4B1BA775B80B /* RNAccountKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2C7C6901CD1552900C9B392;
+			remoteInfo = RNAccountKit;
+		};
 		7A93C4DE2269DF9B007CFBE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 024250242A6A4CDC9D1BB9F3 /* RCTFBLogin.xcodeproj */;
@@ -325,14 +344,20 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = abc/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = abc/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		14C8F564D96C4B1BA775B80B /* RNAccountKit.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNAccountKit.xcodeproj; path = "../node_modules/react-native-facebook-account-kit/ios/RNAccountKit.xcodeproj"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		789B2B4D9E4042C88ACFBAB6 /* libRNGoogleSignin.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGoogleSignin.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7A246E30226D9306002BB523 /* RNCWebView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCWebView.xcodeproj; path = "../node_modules/react-native-webview/ios/RNCWebView.xcodeproj"; sourceTree = "<group>"; };
+		7A246E82226D9C9C002BB523 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		7A246F0A226DA597002BB523 /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AccountKitStrings.bundle; path = "../node_modules/react-native-facebook-account-kit/ios/AccountKitStrings.bundle"; sourceTree = "<group>"; };
+		7A246F0B226DA597002BB523 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = "../node_modules/react-native-facebook-account-kit/ios/AccountKit.framework"; sourceTree = "<group>"; };
 		7AE011742269CA0600826FC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7AE011DB2269CC5A00826FC7 /* RNGoogleSignin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGoogleSignin.xcodeproj; path = "../node_modules/react-native-google-signin/ios/RNGoogleSignin.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8943CEE4FD150FE2297D60C3 /* Pods-abc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-abc/Pods-abc.debug.xcconfig"; sourceTree = "<group>"; };
+		A02AA8DBD0D2400990701C34 /* libRNAccountKit.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAccountKit.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B78930E32559BCFD12134DFB /* libPods-abc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-abc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49D491AA9DFD41B77965ED7 /* Pods-abc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abc.release.xcconfig"; path = "Pods/Target Support Files/Pods-abc/Pods-abc.release.xcconfig"; sourceTree = "<group>"; };
@@ -346,8 +371,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A246E83226D9C9D002BB523 /* Accounts.framework in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
+				7A246E36226D930F002BB523 /* libRNCWebView.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				7AE011E12269CC6600826FC7 /* libRNGoogleSignin.a in Frameworks */,
@@ -359,6 +386,8 @@
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
+				7A246F0E226DAF7F002BB523 /* libRNAccountKit.a in Frameworks */,
+				7A246F0D226DA597002BB523 /* AccountKit.framework in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				4C2B72A016C694D438CE92EF /* libPods-abc.a in Frameworks */,
 			);
@@ -457,6 +486,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				7A246F0B226DA597002BB523 /* AccountKit.framework */,
+				7A246F0A226DA597002BB523 /* AccountKitStrings.bundle */,
 			);
 			name = abc;
 			sourceTree = "<group>";
@@ -487,6 +518,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A246E82226D9C9C002BB523 /* Accounts.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
@@ -513,6 +545,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7A246E31226D9306002BB523 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A246E35226D9306002BB523 /* libRNCWebView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A246EDD226DA585002BB523 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A246F07226DA585002BB523 /* libRNAccountKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7A93C4D62269DF9B007CFBE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -526,6 +574,7 @@
 			children = (
 				789B2B4D9E4042C88ACFBAB6 /* libRNGoogleSignin.a */,
 				E727EA183A354B31AFBC9448 /* libRCTFBLogin.a */,
+				A02AA8DBD0D2400990701C34 /* libRNAccountKit.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -541,6 +590,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7A246E30226D9306002BB523 /* RNCWebView.xcodeproj */,
 				7AE011DB2269CC5A00826FC7 /* RNGoogleSignin.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -555,6 +605,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				024250242A6A4CDC9D1BB9F3 /* RCTFBLogin.xcodeproj */,
+				14C8F564D96C4B1BA775B80B /* RNAccountKit.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -711,6 +762,14 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = 7A246EDD226DA585002BB523 /* Products */;
+					ProjectRef = 14C8F564D96C4B1BA775B80B /* RNAccountKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 7A246E31226D9306002BB523 /* Products */;
+					ProjectRef = 7A246E30226D9306002BB523 /* RNCWebView.xcodeproj */;
 				},
 				{
 					ProductGroup = 7AE011DC2269CC5A00826FC7 /* Products */;
@@ -942,6 +1001,20 @@
 			remoteRef = 78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		7A246E35226D9306002BB523 /* libRNCWebView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNCWebView.a;
+			remoteRef = 7A246E34226D9306002BB523 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7A246F07226DA585002BB523 /* libRNAccountKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNAccountKit.a;
+			remoteRef = 7A246F06226DA585002BB523 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		7A93C4DF2269DF9B007CFBE3 /* libRCTFBLogin.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1008,6 +1081,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				7AE011A22269CA0600826FC7 /* GoogleService-Info.plist in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				7A246F0C226DA597002BB523 /* AccountKitStrings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1110,15 +1184,23 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 6BV6KCJ3CJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin",
 					"$(SRCROOT)/../node_modules/react-native-facebook-login/RCTFBLogin/**",
+					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
 				);
 				INFOPLIST_FILE = abc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/abc\"",
 					"\"$(SRCROOT)/abc\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1141,15 +1223,23 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6BV6KCJ3CJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin",
 					"$(SRCROOT)/../node_modules/react-native-facebook-login/RCTFBLogin/**",
+					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
 				);
 				INFOPLIST_FILE = abc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/abc\"",
 					"\"$(SRCROOT)/abc\"",
 				);
 				OTHER_LDFLAGS = (

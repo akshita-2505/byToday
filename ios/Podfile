@@ -9,5 +9,7 @@ target 'abc' do
 
   pod 'GoogleSignIn'
   pod 'FBSDKLoginKit'
- 
+  pod 'InstagramKit'
+
+  
 end
