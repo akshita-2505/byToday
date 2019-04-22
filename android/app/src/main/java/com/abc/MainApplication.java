@@ -3,6 +3,7 @@ package com.abc;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import net.jodybrewster.linkedinlogin.RNLinkedinLoginPackage;
 import io.underscope.react.fbak.RNAccountKitPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.magus.fblogin.FacebookLoginPackage;
@@ -27,6 +28,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNLinkedinLoginPackage(),
             new RNAccountKitPackage(),
             new RNCWebViewPackage(),
             new FacebookLoginPackage(),

@@ -32,6 +32,7 @@
 				<string>com.googleusercontent.apps.756143807640-k5cs04jjch0h1r6f5bdtlm5kfdm5tnki</string>
 				<string>fb296679481230629</string>
         <string>ak296679481230629</string>
+        <string>li86gsyu8d2hhq64</string>
 			</array>
 		</dict>
 	</array>
@@ -41,12 +42,17 @@
 	<string>296679481230629</string>
 	<key>FacebookDisplayName</key>
 	<string>Akshita's first app</string>
+  <key>LIAppId</key>
+  <string>86gsyu8d2hhq64</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
 		<string>fb-messenger-share-api</string>
 		<string>fbauth2</string>
 		<string>fbshareextension</string>
+    <string>linkedin</string>
+    <string>linkedin-sdk2</string>
+    <string>linkedin-sdk</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -61,6 +67,16 @@
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
 			</dict>
+      <key>linkedin.com</key>
+      <dict>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key>
+        <true/>
+        <key>NSExceptionRequiresForwardSecrecy</key>
+        <false/>
+        <key>NSIncludesSubdomains</key>
+        <true/>
+      </dict>
+      
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -80,4 +96,5 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
 </dict>
+
 </plist>

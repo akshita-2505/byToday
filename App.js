@@ -6,8 +6,9 @@
  * @flow
  */
 
+
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {Platform, StyleSheet, View} from 'react-native';
 import { GoogleSignin, GoogleSigninButton, statusCodes } from 'react-native-google-signin';
 var { FBLogin, FBLoginManager } = require('react-native-facebook-login');
 import InstagramLogin from 'react-native-instagram-login'
@@ -15,7 +16,7 @@ import RNAccountKit, {
   Color,
   StatusBarStyle,
 } from 'react-native-facebook-account-kit'
-
+import LinkedInModal from 'react-native-linkedin'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -36,10 +37,6 @@ export default class App extends Component<Props> {
       accountName: '', // [Android] specifies an account name on the device that should be used
       iosClientId: '756143807640-k5cs04jjch0h1r6f5bdtlm5kfdm5tnki.apps.googleusercontent.com', // [iOS] optional, if you want to specify the client ID of type iOS (otherwise, it is taken from GoogleService-Info.plist)
     });
-
-
-
-
   }
 
   signIn = async () => {
@@ -131,17 +128,24 @@ export default class App extends Component<Props> {
         />
         */
 
+
+    /*
+
+     <TouchableOpacity onPress={()=> this.facebookAuthentication()}>
+          <Text style={{color: 'red'}}>Login</Text>
+        </TouchableOpacity>
+  */
+
+
     return (
       <View style={styles.container}>
 
-        <TouchableOpacity onPress={()=> this.facebookAuthentication()}>
-          <Text style={{color: 'red'}}>Login</Text>
-        </TouchableOpacity>
-
-
-        {/*<Text style={styles.welcome}>Welcome to React Native!</Text>*/}
-        {/*<Text style={styles.instructions}>To get started, edit App.js</Text>*/}
-        {/*<Text style={styles.instructions}>{instructions}</Text>*/}
+        <LinkedInModal
+            clientID="86gsyu8d2hhq64"
+            clientSecret="knhgXuteg7E3P9Jg"
+            redirectUri="http://www.google.com"
+            onSuccess={token => alert(token)}
+        />
       </View>
     );
   }

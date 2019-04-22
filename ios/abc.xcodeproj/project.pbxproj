@@ -26,6 +26,7 @@
 		7A246F0C226DA597002BB523 /* AccountKitStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A246F0A226DA597002BB523 /* AccountKitStrings.bundle */; };
 		7A246F0D226DA597002BB523 /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A246F0B226DA597002BB523 /* AccountKit.framework */; };
 		7A246F0E226DAF7F002BB523 /* libRNAccountKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A246F07226DA585002BB523 /* libRNAccountKit.a */; };
+		7A246F4D226DC668002BB523 /* libRCTLinkedinLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A246F4C226DC4B2002BB523 /* libRCTLinkedinLogin.a */; };
 		7A93C5012269DFB4007CFBE3 /* libRCTFBLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A93C4DF2269DF9B007CFBE3 /* libRCTFBLogin.a */; };
 		7AE011A22269CA0600826FC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AE011742269CA0600826FC7 /* GoogleService-Info.plist */; };
 		7AE011E12269CC6600826FC7 /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE011E02269CC5A00826FC7 /* libRNGoogleSignin.a */; };
@@ -266,6 +267,13 @@
 			remoteGlobalIDString = D2C7C6901CD1552900C9B392;
 			remoteInfo = RNAccountKit;
 		};
+		7A246F4B226DC4B2002BB523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4799FF48D4514EC59CC99324 /* RCTLinkedinLogin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6FB6F0D91D8CE22100D9AE37;
+			remoteInfo = RCTLinkedinLogin;
+		};
 		7A93C4DE2269DF9B007CFBE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 024250242A6A4CDC9D1BB9F3 /* RCTFBLogin.xcodeproj */;
@@ -346,6 +354,8 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		14C8F564D96C4B1BA775B80B /* RNAccountKit.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNAccountKit.xcodeproj; path = "../node_modules/react-native-facebook-account-kit/ios/RNAccountKit.xcodeproj"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4799FF48D4514EC59CC99324 /* RCTLinkedinLogin.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTLinkedinLogin.xcodeproj; path = "../node_modules/react-native-linkedin-login/ios/RCTLinkedinLogin.xcodeproj"; sourceTree = "<group>"; };
+		51DDA289F05C40F690C164A5 /* libRCTLinkedinLogin.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTLinkedinLogin.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		789B2B4D9E4042C88ACFBAB6 /* libRNGoogleSignin.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGoogleSignin.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -381,6 +391,7 @@
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				7A93C5012269DFB4007CFBE3 /* libRCTFBLogin.a in Frameworks */,
+				7A246F4D226DC668002BB523 /* libRCTLinkedinLogin.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
@@ -561,6 +572,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7A246F48226DC4B2002BB523 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A246F4C226DC4B2002BB523 /* libRCTLinkedinLogin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7A93C4D62269DF9B007CFBE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +594,7 @@
 				789B2B4D9E4042C88ACFBAB6 /* libRNGoogleSignin.a */,
 				E727EA183A354B31AFBC9448 /* libRCTFBLogin.a */,
 				A02AA8DBD0D2400990701C34 /* libRNAccountKit.a */,
+				51DDA289F05C40F690C164A5 /* libRCTLinkedinLogin.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -606,6 +626,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				024250242A6A4CDC9D1BB9F3 /* RCTFBLogin.xcodeproj */,
 				14C8F564D96C4B1BA775B80B /* RNAccountKit.xcodeproj */,
+				4799FF48D4514EC59CC99324 /* RCTLinkedinLogin.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -734,6 +755,10 @@
 				{
 					ProductGroup = 00C302BC1ABCB91800DB3ED1 /* Products */;
 					ProjectRef = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+				},
+				{
+					ProductGroup = 7A246F48226DC4B2002BB523 /* Products */;
+					ProjectRef = 4799FF48D4514EC59CC99324 /* RCTLinkedinLogin.xcodeproj */;
 				},
 				{
 					ProductGroup = 78C398B11ACF4ADC00677621 /* Products */;
@@ -1015,6 +1040,13 @@
 			remoteRef = 7A246F06226DA585002BB523 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		7A246F4C226DC4B2002BB523 /* libRCTLinkedinLogin.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTLinkedinLogin.a;
+			remoteRef = 7A246F4B226DC4B2002BB523 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		7A93C4DF2269DF9B007CFBE3 /* libRCTFBLogin.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1195,11 +1227,13 @@
 					"$(SRCROOT)/../node_modules/react-native-facebook-login/RCTFBLogin/**",
 					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-linkedin-login/ios/RCTLinkedinLogin/**",
 				);
 				INFOPLIST_FILE = abc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/abc\"",
 					"\"$(SRCROOT)/abc\"",
 					"\"$(SRCROOT)/abc\"",
 				);
@@ -1234,11 +1268,13 @@
 					"$(SRCROOT)/../node_modules/react-native-facebook-login/RCTFBLogin/**",
 					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-linkedin-login/ios/RCTLinkedinLogin/**",
 				);
 				INFOPLIST_FILE = abc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/abc\"",
 					"\"$(SRCROOT)/abc\"",
 					"\"$(SRCROOT)/abc\"",
 				);
