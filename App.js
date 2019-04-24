@@ -26,18 +26,8 @@ const instructions = Platform.select({
 });
 import BraintreeDropIn from 'react-native-braintree-dropin-ui';
 
-var StripeNative = require('react-native-stripe');
-const STRIPE_KEY = "pk_test_6ssM0FAWg7LEzELebjw9iLb500qJyJUu5k";
-const SOME_ITEMS = [
-  {
-    label: "Llama Kitty T-shirt",
-    amount: 19.99,
-  },
-  {
-    label: "Hello Kitty Humidifier",
-    amount: 25.00,
-  },
-];
+import stripe from 'tipsi-stripe'
+import axios from 'axios'
 
 
 type Props = {};
@@ -52,7 +42,10 @@ export default class App extends Component<Props> {
       iosClientId: '756143807640-k5cs04jjch0h1r6f5bdtlm5kfdm5tnki.apps.googleusercontent.com', // [iOS] optional, if you want to specify the client ID of type iOS (otherwise, it is taken from GoogleService-Info.plist)
     });
 
-    StripeNative.init(STRIPE_KEY);
+    stripe.setOptions({
+      publishableKey: 'pk_test_6ssM0FAWg7LEzELebjw9iLb500qJyJUu5k',
+    });
+
   }
 
   signIn = async () => {
@@ -127,10 +120,39 @@ export default class App extends Component<Props> {
         }).catch((e)=>alert(e))
   }
 
-  tripePaymentGateway = async  () => {
+  //Refer : https://blog.bam.tech/developper-news/setup-stripe-react-native-nodejs
+  stripeRequestPayment = () => {
+    return stripe
+        .paymentRequestWithCardForm()
+        .then(stripeTokenInfo => {
+          debugger
+          this.doPayment(100, stripeTokenInfo.tokenId)
+          console.warn('Token created', { stripeTokenInfo });
+        })
+        .catch(error => {
+          debugger
+          console.warn('Payment failed', { error });
+        });
+  };
 
-  }
-
+  doPayment = (amount, tokenId) => {
+    debugger
+    const body = {
+      amount: amount,
+      tokenId: tokenId,
+    };
+    const headers = {
+      'Content-Type': 'application/json',
+    };
+    return axios
+        .post('http://localhost:3000/doPayment', body, { headers })
+        .then(({ data }) => {
+          return data;
+        })
+        .catch(error => {
+          return Promise.reject('Error in making payment', error);
+        });
+  };
 
   render() {
 
@@ -177,6 +199,8 @@ export default class App extends Component<Props> {
           <Text style={{color: 'red'}}>Login</Text>
         </TouchableOpacity>
   */
+
+
     /*
 
      <LinkedInModal
@@ -187,17 +211,10 @@ export default class App extends Component<Props> {
         />
      */
 
-    /*
-
-     <TouchableOpacity onPress={()=> this.braintTree()}>
-          <Text style={{color: 'red'}}>Login</Text>
-        </TouchableOpacity>
-     */
-
     return (
       <View style={styles.container}>
 
-        <TouchableOpacity onPress={()=> this.tripePaymentGateway()}>
+        <TouchableOpacity onPress={()=> this.stripeRequestPayment()}>
           <Text style={{color: 'red'}}>Login</Text>
         </TouchableOpacity>
       </View>

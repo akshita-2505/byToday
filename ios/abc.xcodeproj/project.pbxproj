@@ -31,7 +31,7 @@
 		7A93C5012269DFB4007CFBE3 /* libRCTFBLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A93C4DF2269DF9B007CFBE3 /* libRCTFBLogin.a */; };
 		7AE011A22269CA0600826FC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AE011742269CA0600826FC7 /* GoogleService-Info.plist */; };
 		7AE011E12269CC6600826FC7 /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE011E02269CC5A00826FC7 /* libRNGoogleSignin.a */; };
-		7AE0BBAC22702DC600F1AE7F /* libStripe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0BBAB22702DC600F1AE7F /* libStripe.a */; };
+		7AE0BCA9227040A000F1AE7F /* libTPSStripe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0BCA82270408100F1AE7F /* libTPSStripe.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
@@ -325,6 +325,13 @@
 			remoteGlobalIDString = 9FD355121D3E4A2900D06170;
 			remoteInfo = RNGoogleSignin;
 		};
+		7AE0BCA72270408100F1AE7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AE0BC782270408100F1AE7F /* TPSStripe.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A3A7F1A1DC27B520030F9DC;
+			remoteInfo = TPSStripe;
+		};
 		832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
@@ -380,6 +387,9 @@
 		7AE0BB9E2270247500F1AE7F /* libStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE0BBA72270282000F1AE7F /* libStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE0BBAB22702DC600F1AE7F /* libStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE0BC5022703E1800F1AE7F /* libStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE0BC5222703E8B00F1AE7F /* libtipsi-stripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libtipsi-stripe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE0BC782270408100F1AE7F /* TPSStripe.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TPSStripe.xcodeproj; path = "../node_modules/tipsi-stripe/ios/TPSStripe.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8943CEE4FD150FE2297D60C3 /* Pods-abc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-abc/Pods-abc.debug.xcconfig"; sourceTree = "<group>"; };
 		A02AA8DBD0D2400990701C34 /* libRNAccountKit.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAccountKit.a; sourceTree = "<group>"; };
@@ -397,7 +407,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE0BBAC22702DC600F1AE7F /* libStripe.a in Frameworks */,
+				7AE0BCA9227040A000F1AE7F /* libTPSStripe.a in Frameworks */,
 				7A246E83226D9C9D002BB523 /* Accounts.framework in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
@@ -548,6 +558,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AE0BC5222703E8B00F1AE7F /* libtipsi-stripe.a */,
+				7AE0BC5022703E1800F1AE7F /* libStripe.a */,
 				7AE0BBAB22702DC600F1AE7F /* libStripe.a */,
 				7AE0BBA72270282000F1AE7F /* libStripe.a */,
 				7AE0BB9E2270247500F1AE7F /* libStripe.a */,
@@ -639,9 +651,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7AE0BC792270408100F1AE7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AE0BCA82270408100F1AE7F /* libTPSStripe.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7AE0BC782270408100F1AE7F /* TPSStripe.xcodeproj */,
 				7A246E30226D9306002BB523 /* RNCWebView.xcodeproj */,
 				7AE011DB2269CC5A00826FC7 /* RNGoogleSignin.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
@@ -841,6 +862,10 @@
 				{
 					ProductGroup = 7AE011DC2269CC5A00826FC7 /* Products */;
 					ProjectRef = 7AE011DB2269CC5A00826FC7 /* RNGoogleSignin.xcodeproj */;
+				},
+				{
+					ProductGroup = 7AE0BC792270408100F1AE7F /* Products */;
+					ProjectRef = 7AE0BC782270408100F1AE7F /* TPSStripe.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1136,6 +1161,13 @@
 			fileType = archive.ar;
 			path = libRNGoogleSignin.a;
 			remoteRef = 7AE011DF2269CC5A00826FC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AE0BCA82270408100F1AE7F /* libTPSStripe.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTPSStripe.a;
+			remoteRef = 7AE0BCA72270408100F1AE7F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		832341B51AAA6A8300B99B32 /* libRCTText.a */ = {
