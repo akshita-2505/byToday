@@ -20,6 +20,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		3D3068C266BD4CCB9247ECDD /* libRNBraintreeDropIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B182812165E3433ABD7185FD /* libRNBraintreeDropIn.a */; };
 		4C2B72A016C694D438CE92EF /* libPods-abc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B78930E32559BCFD12134DFB /* libPods-abc.a */; };
 		7A246E36226D930F002BB523 /* libRNCWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A246E35226D9306002BB523 /* libRNCWebView.a */; };
 		7A246E83226D9C9D002BB523 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A246E82226D9C9C002BB523 /* Accounts.framework */; };
@@ -30,6 +31,7 @@
 		7A93C5012269DFB4007CFBE3 /* libRCTFBLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A93C4DF2269DF9B007CFBE3 /* libRCTFBLogin.a */; };
 		7AE011A22269CA0600826FC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AE011742269CA0600826FC7 /* GoogleService-Info.plist */; };
 		7AE011E12269CC6600826FC7 /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE011E02269CC5A00826FC7 /* libRNGoogleSignin.a */; };
+		7AE0BBAC22702DC600F1AE7F /* libStripe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0BBAB22702DC600F1AE7F /* libStripe.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
@@ -274,6 +276,13 @@
 			remoteGlobalIDString = 6FB6F0D91D8CE22100D9AE37;
 			remoteInfo = RCTLinkedinLogin;
 		};
+		7A246F8A226DD2F4002BB523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B514FE87774B7E820D4A97 /* RNBraintreeDropIn.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNBraintreeDropIn;
+		};
 		7A93C4DE2269DF9B007CFBE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 024250242A6A4CDC9D1BB9F3 /* RCTFBLogin.xcodeproj */;
@@ -353,7 +362,9 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = abc/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		14C8F564D96C4B1BA775B80B /* RNAccountKit.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNAccountKit.xcodeproj; path = "../node_modules/react-native-facebook-account-kit/ios/RNAccountKit.xcodeproj"; sourceTree = "<group>"; };
+		29B514FE87774B7E820D4A97 /* RNBraintreeDropIn.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNBraintreeDropIn.xcodeproj; path = "../node_modules/react-native-braintree-dropin-ui/ios/RNBraintreeDropIn.xcodeproj"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4614834CB474484EAC0CBFE6 /* libRNCardIO.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCardIO.a; sourceTree = "<group>"; };
 		4799FF48D4514EC59CC99324 /* RCTLinkedinLogin.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTLinkedinLogin.xcodeproj; path = "../node_modules/react-native-linkedin-login/ios/RCTLinkedinLogin.xcodeproj"; sourceTree = "<group>"; };
 		51DDA289F05C40F690C164A5 /* libRCTLinkedinLogin.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTLinkedinLogin.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
@@ -363,12 +374,17 @@
 		7A246E82226D9C9C002BB523 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		7A246F0A226DA597002BB523 /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AccountKitStrings.bundle; path = "../node_modules/react-native-facebook-account-kit/ios/AccountKitStrings.bundle"; sourceTree = "<group>"; };
 		7A246F0B226DA597002BB523 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = "../node_modules/react-native-facebook-account-kit/ios/AccountKit.framework"; sourceTree = "<group>"; };
+		7A88A8F4226DE6A2002AA3DE /* abc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = abc.entitlements; path = abc/abc.entitlements; sourceTree = "<group>"; };
 		7AE011742269CA0600826FC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7AE011DB2269CC5A00826FC7 /* RNGoogleSignin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGoogleSignin.xcodeproj; path = "../node_modules/react-native-google-signin/ios/RNGoogleSignin.xcodeproj"; sourceTree = "<group>"; };
+		7AE0BB9E2270247500F1AE7F /* libStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE0BBA72270282000F1AE7F /* libStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE0BBAB22702DC600F1AE7F /* libStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8943CEE4FD150FE2297D60C3 /* Pods-abc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-abc/Pods-abc.debug.xcconfig"; sourceTree = "<group>"; };
 		A02AA8DBD0D2400990701C34 /* libRNAccountKit.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAccountKit.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		B182812165E3433ABD7185FD /* libRNBraintreeDropIn.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNBraintreeDropIn.a; sourceTree = "<group>"; };
 		B78930E32559BCFD12134DFB /* libPods-abc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-abc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49D491AA9DFD41B77965ED7 /* Pods-abc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abc.release.xcconfig"; path = "Pods/Target Support Files/Pods-abc/Pods-abc.release.xcconfig"; sourceTree = "<group>"; };
 		E727EA183A354B31AFBC9448 /* libRCTFBLogin.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTFBLogin.a; sourceTree = "<group>"; };
@@ -381,6 +397,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE0BBAC22702DC600F1AE7F /* libStripe.a in Frameworks */,
 				7A246E83226D9C9D002BB523 /* Accounts.framework in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
@@ -401,6 +418,7 @@
 				7A246F0D226DA597002BB523 /* AccountKit.framework in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				4C2B72A016C694D438CE92EF /* libPods-abc.a in Frameworks */,
+				3D3068C266BD4CCB9247ECDD /* libRNBraintreeDropIn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +507,7 @@
 		13B07FAE1A68108700A75B9A /* abc */ = {
 			isa = PBXGroup;
 			children = (
+				7A88A8F4226DE6A2002AA3DE /* abc.entitlements */,
 				7AE011742269CA0600826FC7 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -529,6 +548,9 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AE0BBAB22702DC600F1AE7F /* libStripe.a */,
+				7AE0BBA72270282000F1AE7F /* libStripe.a */,
+				7AE0BB9E2270247500F1AE7F /* libStripe.a */,
 				7A246E82226D9C9C002BB523 /* Accounts.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
@@ -580,6 +602,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7A246F5F226DD2F4002BB523 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A246F8B226DD2F4002BB523 /* libRNBraintreeDropIn.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7A93C4D62269DF9B007CFBE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -595,6 +625,8 @@
 				E727EA183A354B31AFBC9448 /* libRCTFBLogin.a */,
 				A02AA8DBD0D2400990701C34 /* libRNAccountKit.a */,
 				51DDA289F05C40F690C164A5 /* libRCTLinkedinLogin.a */,
+				B182812165E3433ABD7185FD /* libRNBraintreeDropIn.a */,
+				4614834CB474484EAC0CBFE6 /* libRNCardIO.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -627,6 +659,7 @@
 				024250242A6A4CDC9D1BB9F3 /* RCTFBLogin.xcodeproj */,
 				14C8F564D96C4B1BA775B80B /* RNAccountKit.xcodeproj */,
 				4799FF48D4514EC59CC99324 /* RCTLinkedinLogin.xcodeproj */,
+				29B514FE87774B7E820D4A97 /* RNBraintreeDropIn.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -717,6 +750,11 @@
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 6BV6KCJ3CJ;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -791,6 +829,10 @@
 				{
 					ProductGroup = 7A246EDD226DA585002BB523 /* Products */;
 					ProjectRef = 14C8F564D96C4B1BA775B80B /* RNAccountKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 7A246F5F226DD2F4002BB523 /* Products */;
+					ProjectRef = 29B514FE87774B7E820D4A97 /* RNBraintreeDropIn.xcodeproj */;
 				},
 				{
 					ProductGroup = 7A246E31226D9306002BB523 /* Products */;
@@ -1047,6 +1089,13 @@
 			remoteRef = 7A246F4B226DC4B2002BB523 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		7A246F8B226DD2F4002BB523 /* libRNBraintreeDropIn.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNBraintreeDropIn.a;
+			remoteRef = 7A246F8A226DD2F4002BB523 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		7A93C4DF2269DF9B007CFBE3 /* libRCTFBLogin.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1143,15 +1192,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-abc/Pods-abc-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree-UI-Localization.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree-Drop-In-Localization.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/BraintreeDropIn/Braintree-UIKit-Localization.bundle",
 				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Braintree-UI-Localization.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Braintree-Drop-In-Localization.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Braintree-UIKit-Localization.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Stripe.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1228,13 +1285,13 @@
 					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-linkedin-login/ios/RCTLinkedinLogin/**",
+					"$(SRCROOT)/../node_modules/react-native-braintree-dropin-ui/ios",
+					"$(SRCROOT)/../node_modules/react-native-awesome-card-io/ios/**",
 				);
 				INFOPLIST_FILE = abc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/abc\"",
-					"\"$(SRCROOT)/abc\"",
 					"\"$(SRCROOT)/abc\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1269,13 +1326,13 @@
 					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-linkedin-login/ios/RCTLinkedinLogin/**",
+					"$(SRCROOT)/../node_modules/react-native-braintree-dropin-ui/ios",
+					"$(SRCROOT)/../node_modules/react-native-awesome-card-io/ios/**",
 				);
 				INFOPLIST_FILE = abc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/abc\"",
-					"\"$(SRCROOT)/abc\"",
 					"\"$(SRCROOT)/abc\"",
 				);
 				OTHER_LDFLAGS = (

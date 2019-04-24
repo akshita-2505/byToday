@@ -20,6 +20,53 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
+  - Braintree (4.23.0):
+    - Braintree/Card (= 4.23.0)
+    - Braintree/Core (= 4.23.0)
+    - Braintree/PayPal (= 4.23.0)
+    - Braintree/UI (= 4.23.0)
+  - Braintree/Apple-Pay (4.23.0):
+    - Braintree/Core
+  - Braintree/Card (4.23.0):
+    - Braintree/Core
+  - Braintree/Core (4.23.0)
+  - Braintree/DataCollector (4.23.0):
+    - Braintree/Core
+  - Braintree/PaymentFlow (4.23.0):
+    - Braintree/Card
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPal (4.23.0):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.23.0):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.23.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.23.0)
+  - Braintree/UI (4.23.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/UnionPay (4.23.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/Venmo (4.23.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+  - BraintreeDropIn (7.1.0):
+    - BraintreeDropIn/DropIn (= 7.1.0)
+  - BraintreeDropIn/DropIn (7.1.0):
+    - Braintree/Card (~> 4.23)
+    - Braintree/Core (~> 4.23)
+    - Braintree/PaymentFlow (~> 4.23)
+    - Braintree/PayPal (~> 4.23)
+    - Braintree/UnionPay (~> 4.23)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (7.1.0)
+  - CardIO (5.4.1)
   - FBSDKCoreKit (4.44.1):
     - Bolts (~> 1.9)
   - FBSDKLoginKit (4.44.1):
@@ -42,33 +89,50 @@ PODS:
     - InstagramKit/InstagramKit-without-UICKeyChainStore (= 4.1)
   - InstagramKit/InstagramKit-without-UICKeyChainStore (4.1):
     - AFNetworking (~> 3.0)
+  - Stripe (15.0.0)
 
 DEPENDENCIES:
+  - Braintree
+  - Braintree/Apple-Pay
+  - Braintree/DataCollector
+  - Braintree/PayPal
+  - Braintree/Venmo
+  - BraintreeDropIn
+  - CardIO
   - FBSDKLoginKit
   - GoogleSignIn
   - InstagramKit
+  - Stripe
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - Bolts
+    - Braintree
+    - BraintreeDropIn
+    - CardIO
     - FBSDKCoreKit
     - FBSDKLoginKit
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMSessionFetcher
     - InstagramKit
+    - Stripe
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Braintree: b5841b9b1c1dadc86959db3e29d36099b67f91bf
+  BraintreeDropIn: a019fcbf4edb87c55780ec01d5db3998b19164ce
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
   FBSDKCoreKit: a823ae35bdb60ebb8d7a7e51abe7c5d87d2bfced
   FBSDKLoginKit: 54ae59987f2a8703021557c90a9aebb9e5c2bef6
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   InstagramKit: fa2017d4fb5d0a4dde026eeebda641e6df61c714
+  Stripe: 312b22a67af9fa55c246d26148b3f3a9636a0ff2
 
-PODFILE CHECKSUM: dc097ebf1885483d1b5bcdd09b5446e7f7feb0b7
+PODFILE CHECKSUM: 084931ef13833cec4fd4b1a513faf5d8091b1ddf
 
 COCOAPODS: 1.5.3

@@ -11,4 +11,20 @@ target 'abc' do
   pod 'FBSDKLoginKit'
   pod 'InstagramKit'
 
+  pod 'Braintree'
+  pod 'BraintreeDropIn'
+  # comment the next line to disable Apple pay
+  pod 'Braintree/Apple-Pay'
+  # comment the next line to disable PayPal
+  pod 'Braintree/PayPal'
+  # comment the next line to disable Venmo
+  pod 'Braintree/Venmo'
+  # Data collector for Braintree Advanced Fraud Tools
+  pod 'Braintree/DataCollector'
+  
+  # comment the next line to disable credit card scanning
+  pod 'CardIO'
+  
+  pod 'Stripe'
+
 end

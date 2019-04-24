@@ -33,6 +33,7 @@
 				<string>fb296679481230629</string>
         <string>ak296679481230629</string>
         <string>li86gsyu8d2hhq64</string>
+        <string>com.testingoffice.payments</string>
 			</array>
 		</dict>
 	</array>
@@ -96,5 +97,9 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
 </dict>
+
+
+
+
 
 </plist>

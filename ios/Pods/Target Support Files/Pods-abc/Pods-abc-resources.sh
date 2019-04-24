@@ -92,12 +92,20 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree-UI-Localization.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree-Drop-In-Localization.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/BraintreeDropIn/Braintree-UIKit-Localization.bundle"
   install_resource "${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle"
   install_resource "${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree-UI-Localization.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree-Drop-In-Localization.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/BraintreeDropIn/Braintree-UIKit-Localization.bundle"
   install_resource "${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle"
   install_resource "${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

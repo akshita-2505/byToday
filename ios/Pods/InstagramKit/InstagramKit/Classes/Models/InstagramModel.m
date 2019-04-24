@@ -46,7 +46,7 @@ NSString *const kFilter = @"filter";
 NSString *const kTags = @"tags";
 NSString *const kImages = @"images";
 NSString *const kVideos = @"videos";
-NSString *const kLocation = @"location";
+//NSString *const kLocation = @"location";
 NSString *const kType = @"type";
 
 NSString *const kCreator = @"from";

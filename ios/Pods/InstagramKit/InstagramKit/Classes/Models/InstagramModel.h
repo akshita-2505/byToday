@@ -53,7 +53,7 @@ INSTAGRAMKIT_EXTERN NSString *const kFilter;
 INSTAGRAMKIT_EXTERN NSString *const kTags;
 INSTAGRAMKIT_EXTERN NSString *const kImages;
 INSTAGRAMKIT_EXTERN NSString *const kVideos;
-INSTAGRAMKIT_EXTERN NSString *const kLocation;
+//INSTAGRAMKIT_EXTERN NSString *const kLocation;
 INSTAGRAMKIT_EXTERN NSString *const kType;
 
 INSTAGRAMKIT_EXTERN NSString *const kCreator;

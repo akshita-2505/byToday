@@ -3,6 +3,8 @@ package com.abc;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.cardio.RNCardIOPackage;
+import tech.bam.RNBraintreeDropIn.RNBraintreeDropInPackage;
 import net.jodybrewster.linkedinlogin.RNLinkedinLoginPackage;
 import io.underscope.react.fbak.RNAccountKitPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
@@ -28,6 +30,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNCardIOPackage(),
+            new RNBraintreeDropInPackage(),
             new RNLinkedinLoginPackage(),
             new RNAccountKitPackage(),
             new RNCWebViewPackage(),

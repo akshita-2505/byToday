@@ -106,12 +106,12 @@
 
         self.tags = IKNotNull(info[kTags]) ? [[NSArray alloc] initWithArray:info[kTags]] : nil;
         
-        if (IKNotNull(info[kLocation])) {
-            id locationId = IKNotNull(info[kLocation][kID]) ? info[kLocation][kID] : nil;
-            self.locationId = ([locationId isKindOfClass:[NSString class]]) ? locationId : [locationId stringValue];
-            self.locationName = IKNotNull(info[kLocation][kLocationName]) ? info[kLocation][kLocationName] : nil;
-            self.location = CLLocationCoordinate2DMake([(info[kLocation])[kLocationLatitude] doubleValue], [(info[kLocation])[kLocationLongitude] doubleValue]);
-        }
+//        if (IKNotNull(info[kLocation])) {
+//            id locationId = IKNotNull(info[kLocation][kID]) ? info[kLocation][kID] : nil;
+//            self.locationId = ([locationId isKindOfClass:[NSString class]]) ? locationId : [locationId stringValue];
+//            self.locationName = IKNotNull(info[kLocation][kLocationName]) ? info[kLocation][kLocationName] : nil;
+//            self.location = CLLocationCoordinate2DMake([(info[kLocation])[kLocationLatitude] doubleValue], [(info[kLocation])[kLocationLongitude] doubleValue]);
+//        }
         
         self.filter = IKNotNull(info[kFilter]) ? info[kFilter] : nil;
         
