@@ -30,8 +30,7 @@
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   
-   [BTAppSwitch setReturnURLScheme:self.paymentsURLScheme];
-  
+  [BTAppSwitch setReturnURLScheme:self.paymentsURLScheme];
   [self fetchClientToken];
   
   return YES;

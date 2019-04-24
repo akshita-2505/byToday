@@ -32,6 +32,8 @@
 		7AE011A22269CA0600826FC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AE011742269CA0600826FC7 /* GoogleService-Info.plist */; };
 		7AE011E12269CC6600826FC7 /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE011E02269CC5A00826FC7 /* libRNGoogleSignin.a */; };
 		7AE0BCA9227040A000F1AE7F /* libTPSStripe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0BCA82270408100F1AE7F /* libTPSStripe.a */; };
+		7AE0BCF222705FA100F1AE7F /* NativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0BCF122705FA100F1AE7F /* NativeViewController.m */; };
+		7AE0BCFE227063C700F1AE7F /* RCTViewManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0BCFD227063C700F1AE7F /* RCTViewManagerView.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
@@ -390,6 +392,11 @@
 		7AE0BC5022703E1800F1AE7F /* libStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE0BC5222703E8B00F1AE7F /* libtipsi-stripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libtipsi-stripe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE0BC782270408100F1AE7F /* TPSStripe.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TPSStripe.xcodeproj; path = "../node_modules/tipsi-stripe/ios/TPSStripe.xcodeproj"; sourceTree = "<group>"; };
+		7AE0BCBD22705CE500F1AE7F /* abc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "abc-Bridging-Header.h"; sourceTree = "<group>"; };
+		7AE0BCF022705FA100F1AE7F /* NativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeViewController.h; sourceTree = "<group>"; };
+		7AE0BCF122705FA100F1AE7F /* NativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeViewController.m; sourceTree = "<group>"; };
+		7AE0BCFC227063C700F1AE7F /* RCTViewManagerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTViewManagerView.h; sourceTree = "<group>"; };
+		7AE0BCFD227063C700F1AE7F /* RCTViewManagerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTViewManagerView.m; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8943CEE4FD150FE2297D60C3 /* Pods-abc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-abc/Pods-abc.debug.xcconfig"; sourceTree = "<group>"; };
 		A02AA8DBD0D2400990701C34 /* libRNAccountKit.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAccountKit.a; sourceTree = "<group>"; };
@@ -528,6 +535,11 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				7A246F0B226DA597002BB523 /* AccountKit.framework */,
 				7A246F0A226DA597002BB523 /* AccountKitStrings.bundle */,
+				7AE0BCBD22705CE500F1AE7F /* abc-Bridging-Header.h */,
+				7AE0BCF022705FA100F1AE7F /* NativeViewController.h */,
+				7AE0BCF122705FA100F1AE7F /* NativeViewController.m */,
+				7AE0BCFC227063C700F1AE7F /* RCTViewManagerView.h */,
+				7AE0BCFD227063C700F1AE7F /* RCTViewManagerView.m */,
 			);
 			name = abc;
 			sourceTree = "<group>";
@@ -770,6 +782,7 @@
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 6BV6KCJ3CJ;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplePay = {
@@ -1277,7 +1290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				7AE0BCFE227063C700F1AE7F /* RCTViewManagerView.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				7AE0BCF222705FA100F1AE7F /* NativeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1301,6 +1316,7 @@
 			baseConfigurationReference = 8943CEE4FD150FE2297D60C3 /* Pods-abc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
@@ -1334,6 +1350,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.testingoffice;
 				PRODUCT_NAME = abc;
 				PROVISIONING_PROFILE_SPECIFIER = testingDev;
+				SWIFT_OBJC_BRIDGING_HEADER = "abc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1343,6 +1362,7 @@
 			baseConfigurationReference = E49D491AA9DFD41B77965ED7 /* Pods-abc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6BV6KCJ3CJ;
@@ -1375,6 +1395,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.testingoffice;
 				PRODUCT_NAME = abc;
 				PROVISIONING_PROFILE_SPECIFIER = testingDev;
+				SWIFT_OBJC_BRIDGING_HEADER = "abc-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

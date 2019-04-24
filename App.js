@@ -8,7 +8,7 @@
 
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, View, TouchableOpacity, Text} from 'react-native';
+import {Platform, StyleSheet, View, TouchableOpacity, Text, NativeModules} from 'react-native';
 import { GoogleSignin, GoogleSigninButton, statusCodes } from 'react-native-google-signin';
 var { FBLogin, FBLoginManager } = require('react-native-facebook-login');
 import InstagramLogin from 'react-native-instagram-login'
@@ -28,6 +28,9 @@ import BraintreeDropIn from 'react-native-braintree-dropin-ui';
 
 import stripe from 'tipsi-stripe'
 import axios from 'axios'
+
+var NativeViewController = NativeModules.NativeViewController;
+import MapView from './mapView.js';
 
 
 type Props = {};
@@ -89,6 +92,7 @@ export default class App extends Component<Props> {
           }
         });
   }
+
   facebookAuthentication = async  () => {
     // Configures the SDK with some options
     // RNAccountKit.configure({
@@ -154,6 +158,12 @@ export default class App extends Component<Props> {
         });
   };
 
+
+  nativeComponentConnection = () => {
+    NativeViewController.addEvent('Birthday Party', '4 Privet Drive, Surrey');
+    module.exports = requireNativeComponent('RNTMap');
+  }
+
   render() {
 
     /*
@@ -211,14 +221,22 @@ export default class App extends Component<Props> {
         />
      */
 
-    return (
-      <View style={styles.container}>
-
-        <TouchableOpacity onPress={()=> this.stripeRequestPayment()}>
+    /*
+     <TouchableOpacity onPress={()=> this.stripeRequestPayment()}>
           <Text style={{color: 'red'}}>Login</Text>
         </TouchableOpacity>
-      </View>
-    );
+     */
+
+    // return (
+    //   <View style={styles.container}>
+    //
+    //     <TouchableOpacity onPress={()=> this.nativeComponentConnection()}>
+    //       <Text style={{color: 'red'}}>Login</Text>
+    //     </TouchableOpacity>
+    //   </View>
+    // );
+
+    return <MapView style={{ flex: 1 }} />;
   }
 }
 
